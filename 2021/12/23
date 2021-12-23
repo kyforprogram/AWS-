@@ -14,3 +14,73 @@ SQSの使い方？
 Auto Scalingについて
 インスタンスの構成をAuto Scallingの場合はインスタンスを最初に設定するためあとから変更できない。
 
+セキリティグループとACLの違い
+https://milestone-of-se.nesuke.com/wp-content/uploads/2019/04/acl-sg-1v3.png.webp
+
+s3
+2020年12月から変更され強い一貫性、読み込み一貫性
+だからAZをまたいでもﾃﾞｰﾀが最新情報が常に取得できる
+
+CloudTrailのログを監査する方法
+CloudTrail ログファイルの整合性の検証とは
+CloudTrail ログファイルが特定の Amazon S3 バケットに配信されてから、そのログファイルが変更されていないか、削除されたか、変更されたかどうかを判断
+
+ユーザーデータとは
+Osの設定などが書いてあるテキストファイルの事がユーザーデータ
+
+メタデータとは
+サーバの種類とか設定のことをメタデータ
+
+AWSが責任を持つ
+仮想化基盤の管理
+
+Table 1. The pillars of the AWS Well-Architected Framework
+
+Name	Description
+Operational Excellence	The ability to support development and run workloads effectively, gain insight into their operations, and to continuously improve supporting processes and procedures to deliver business value.
+Security	The security pillar describes how to take advantage of cloud technologies to protect data, systems, and assets in a way that can improve your security posture.
+Reliability	The reliability pillar encompasses the ability of a workload to perform its intended function correctly and consistently when it’s expected to. This includes the ability to operate and test the workload through its total lifecycle. This paper provides in-depth, best practice guidance for implementing reliable workloads on AWS.
+Performance Efficiency	The ability to use computing resources efficiently to meet system requirements, and to maintain that efficiency as demand changes and technologies evolve.
+Cost Optimization	The ability to run systems to deliver business value at the lowest price point.
+Sustainability	The ability to continually improve sustainability impacts by reducing energy consumption and increasing efficiency across all components of a workload by maximizing the benefits from the provisioned resources and minimizing the total resources required.
+
+データレイクとは
+一ヵ所にまとめよう、形式は問わない
+
+データウェアハウスとは
+DBを一括にし分析を行う
+データを統一する必要がある。
+
+アドホック
+
+
+Glueとは
+データを変換するサービス
+
+Amazon Athena
+
+CLIは
+
+RedShift Spectrumとは
+データウェアハウスとかデータレイクなどのAWSのs3を分析する
+S3分析
+
+トラフィックフローとは
+
+ルーティングポリシーを設定したらどうなる？
+
+シンプルルーティングポリシー – ドメインで特定の機能を実行する単一のリソースがある場合に使用します。例えば、example.com ウェブサイトにコンテンツを提供する 1 つのウェブサーバーなどです。
+
+フェイルオーバールーティングポリシー – アクティブ/パッシブフェイルオーバーを構成する場合に使用します。
+
+位置情報ルーティングポリシー – ユーザーの位置に基づいてトラフィックをルーティングする場合に使用します。
+
+地理的近接性ルーティングポリシー – リソースの場所に基づいてトラフィックをルーティングし、必要に応じてトラフィックをある場所のリソースから別の場所のリソースに移動する場合に使用します。
+
+レイテンシールーティングポリシー – 複数の AWS リージョンにリソースがあり、より少ない往復時間で最良のレイテンシーを実現するリージョンにトラフィックをルーティングする場合に使用します。
+
+複数値回答ルーティングポリシー – ランダムに選ばれた最大 8 つの正常なレコードを使用して Route 53 が DNS クエリに応答する場合に使用します。
+
+加重ルーティングポリシー – 指定した比率で複数のリソースにトラフィックをルーティングする場合に使用します。
+
+トピック
